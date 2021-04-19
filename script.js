@@ -178,7 +178,7 @@ class wallet_es6{
     get_money_amount(){ return this.#money; }
     put_money(add) { this.#money += add; }
     take_money(take) {
-        if(money - take >= 0){
+        if(this.#money - take >= 0){
             this.#money -= take;
             return take;
         }
